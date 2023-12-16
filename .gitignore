@@ -1,3 +1,11 @@
+# Ignore data files (large)
+cleaned_csv/
+raw_data/
+*.csv
+
+# Ignore PPTX
+*.pptx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
