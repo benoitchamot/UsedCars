@@ -1,0 +1,42 @@
+location
+--
+location_id VARCHAR PK
+region VARCHAR
+state VARCHAR
+lat FLOAT
+long FLOAT
+region_url VARCHAR
+
+vehicle
+--
+vehicle_id VARCHAR PK
+model VARCHAR
+manufacturer VARCHAR
+year int32
+cylinders VARCHAR
+fuel VARCHAR
+transmission VARCHAR
+drive VARCHAR
+size VARCHAR
+type VARCHAR
+
+usage
+--
+id INT PK
+condition VARCHAR
+odometer FLOAT
+title_status VARCHAR
+VIN VARCHAR
+paint_color VARCHAR
+vehicle_id VARCHAR FK - vehicle.vehicle_id
+listing_id VARCHAR FK - listing.listing_id
+
+listing
+--
+listing_id VARCHAR PK
+posting_date VARCHAR
+price INT
+location_id VARCHAR FK >- location.location_id
+url VARCHAR
+image_url VARCHAR
+description VARCHAR

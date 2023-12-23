@@ -2,6 +2,11 @@
 cleaned_csv/
 raw_data/
 *.csv
+parquet/
+
+# Parquet temp files
+.part*
+._SUCCESS*
 
 # Ignore PPTX
 *.pptx
