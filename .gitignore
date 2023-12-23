@@ -4,6 +4,9 @@ raw_data/
 *.csv
 parquet/
 
+# Ignore database (large)
+database/
+
 # Parquet temp files
 .part*
 ._SUCCESS*
